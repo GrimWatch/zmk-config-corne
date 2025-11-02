@@ -67,6 +67,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
+                        label = "Default";
 // -----------------------------------------------------------------------------------------
 // |   BSPC   |    Q     |    W     |    E     |    R     |    T     |   |    Y     |    U     |    I     |    O     |    P     |   TAB    |
 // |   CTRL   | LSHIFT/A | CTRL/S   | LGUI/D   | LALT/F   |    G     |   |    H     | RALT/J   | RGUI/K   | RCTRL/L  | RSHIFT/; |    '     |
@@ -81,6 +82,7 @@
                         >;
                 };
                 gaming_layer {
+                        label = "Gaming";
 // -----------------------------------------------------------------------------------------
 // |   BSPC   |    Q     |    W     |    E     |    R     |    T     |   |    Y     |    U     |    I     |    O     |    P     |   TAB    |
 // |   CTRL   |    A     |    S     |    D     |    F     |    G     |   |    H     |    J     |    K     |    L     |    ;     |    '     |
@@ -95,11 +97,12 @@
                         >;
                 };
                 lower_layer {
+                        label = "Lower";
 // -----------------------------------------------------------------------------------------
-// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0   |     |
-// | CAPS | BT1 | BT2 | BT3 | BT4 | BT5 |   |  -  |  =  |  [  |  ]  |  SS  |  `  |
-// |      |BTCLR|     |     | GAME|     |   |     |     |     |     |      |     |
-//                    | GUI |     |     |   |     |     |     |
+// |      |  1   |  2   |  3   |  4   |  5   |   |  6   |  7   |  8   |  9   |  0   |      |
+// | CAPS | BT1  | BT2  | BT3  | BT4  | BT5  |   |  -   |  =   |  [   |  ]   |  SS  |  `   |
+// |      |BTCLR |      |      | GAME |      |   |      |      |      |      |      |      |
+//                      | GUI  |      |      |   |      |      |      |
                         bindings = <
    &trans     &kp N1       &kp N2       &kp N3       &kp  N4       &kp N5         &kp N6    &kp N7    &kp N8   &kp N9    &kp N0              &trans 
    &kp CAPS   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt  BT_SEL 3 &bt BT_SEL 4   &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp LG(LS(S)) &kp GRAVE
@@ -108,24 +111,27 @@
                         >;
                 };
                 raise_layer {
+                        label = "Raise";
 // -----------------------------------------------------------------------------------------
-// |  BSPC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// | BSPC |  !   |  @   |  #   |  $   |  %   |   |  ^   |  &   |  *   |  (   |  )   | BSPC |
+// | CTRL |      |      |      |      |      |   | LEFT | DOWN |  UP  | RIGHT|  \   |  `   |
+// | SHFT |      |      |      |      |      |   |  _   |  +   |  {   |  }   | "|"  |  ~   |
+//                      | GUI  |      | SPC  |   | ENT  |      | ALT  |
                         bindings = <
    &kp  BSPC  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
+   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
 
                 extra1 {
+                        label = "Extra1";
                         status = "reserved";
                 };
 
                 extra2 {
+                        label = "Extra2";
                         status = "reserved";
                 };
         };
