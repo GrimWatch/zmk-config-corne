@@ -1,0 +1,10 @@
+/ {
+  behaviors {
+    ani_tog: ani_tog {
+      compatible = "zmk,behavior-cmd";
+      label = "ANI_TOGGLE";
+      #binding-cells = 0;
+      cmd = "nice_view_toggle_animation";
+    };
+  };
+};
